@@ -91,7 +91,7 @@ export default {
       user: {
         email: {
           required: helpers.withMessage(
-            "you are not going anywere without filling this field bro",
+            "you are not going anywere without filling this field bro.",
             required
           ),
           email,
