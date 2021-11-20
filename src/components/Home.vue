@@ -66,6 +66,7 @@
   </div>
   <button
     class="border-2 bg-purple-600 px-4 py-2 text-white rounded"
+    :class="v$.user.$error ? 'opacity-20 cursor-not-allowed' : ''"
     @click="submitform"
   >
     submit
@@ -94,10 +95,10 @@ export default {
             "you are not going anywere without filling this field bro.",
             required
           ),
-          email,
+          email: helpers.withMessage("sai vali email likho sarkar", email),
           $autoDirty: true,
         },
-        contact: { required, minLength: minLength(8), $lazy: true },
+        contact: { required, minLength: minLength(8), $autoDirty: true },
         password: {
           required,
           minLength: minLength(5),

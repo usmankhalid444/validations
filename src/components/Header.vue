@@ -18,12 +18,9 @@
       <div class="float-right">
         <ul>
           <li class="inline">
-            <a
-              class="p-4 hover:text-purple-600"
-              href="#"
-              @click="dark = !dark"
-              >{{ dark ? "Light Mode" : "Dark Mode" }}</a
-            >
+            <a class="p-4 hover:text-purple-600" href="#" @click="darkMode">{{
+              dark ? "Light Mode" : "Dark Mode"
+            }}</a>
           </li>
           <li class="inline">
             <router-link to="/">
@@ -56,6 +53,17 @@ export default {
     return {
       dark: false,
     };
+  },
+  methods: {
+    darkMode() {
+      this.dark = !this.dark;
+      if (this.dark) {
+        document.body.classList.add("dark:bg-gray-400");
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    },
   },
 };
 </script>
