@@ -7,3 +7,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .btnGreen {
+    @apply bg-green-500 text-white py-3 px-3 m-6 rounded-lg;
+  }
+  .btnPurple {
+    @apply bg-purple-700 text-white py-3 px-3 m-6 rounded-lg;
+  }
+}

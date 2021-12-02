@@ -2,6 +2,19 @@
 
 <template>
   <div class="hello my-auto w-full dark:bg-gray-500 dark:text-white">
+    <button v-wave class="btnGreen">click me to see effect</button>
+    <button v-wave class="btnPurple dark:bg-black">
+      click me to see effect</button
+    ><button v-wave class="btnGreen">click me to see effect</button>
+    <button v-wave class="btnPurple">click me to see effect</button
+    ><button v-wave class="btnGreen">click me to see effect</button>
+    <button v-wave class="btnPurple">click me to see effect</button
+    ><button v-wave class="btnGreen">click me to see effect</button>
+    <button v-wave class="btnPurple">click me to see effect</button
+    ><button v-wave class="btnGreen">click me to see effect</button>
+    <button v-wave class="btnPurple">click me to see effect</button
+    ><button v-wave class="btnGreen">click me to see effect</button>
+    <button v-wave class="btnPurple">click me to see effect</button>
     <h1 class="bg-red-200">{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
